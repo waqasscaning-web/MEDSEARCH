@@ -1,0 +1,932 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	padding:0px;
+	margin:0px;
+	
+	}
+
+
+#top_bar{
+	width:960px;
+	height:50px;
+	margin:0 auto;
+	background:#e71838;
+	}
+
+
+#left_top_bar{
+	width:25%;
+	height:100%;
+	float:left;
+	}
+
+
+
+#one_left_top_bar{
+	width:25%;
+	height:100%;
+	float:left;
+	}
+
+
+#two_left_top_bar{
+	width:25%;
+	height:100%;
+	float:left;
+	background:#555555;
+	text-align:center;
+	font-size:25px;
+	transition:1s all;
+	}
+
+#two_left_top_bar a{
+	color:#FFF;
+	transition:1s all;
+}
+
+
+#two_left_top_bar:hover{
+	background:#FFF;
+	transition:1s all;
+	}
+	
+
+#two_left_top_bar:hover a{
+	color:#e71838;
+	transition:1s all;
+}
+
+
+
+
+
+
+
+
+
+
+#three_left_top_bar{
+	width:25%;
+	height:100%;
+	float:left;
+	background:#555555;
+	text-align:center;
+	font-size:25px;
+	transition:1s all;
+	}
+
+#three_left_top_bar a{
+	color:#FFF;
+	transition:1s all;
+}
+
+
+#three_left_top_bar:hover{
+	background:#FFF;
+	transition:1s all;
+	}
+	
+
+#three_left_top_bar:hover a{
+	color:#e71838;
+	transition:1s all;
+}
+
+
+
+
+#four_left_top_bar{
+	width:25%;
+	height:100%;
+	float:left;
+	background:#555555;
+	text-align:center;
+	font-size:25px;
+	transition:1s all;
+	}
+
+#four_left_top_bar a{
+	color:#FFF;
+	transition:1s all;
+}
+
+
+#four_left_top_bar:hover{
+	background:#FFF;
+	transition:1s all;
+	}
+	
+
+#four_left_top_bar:hover a{
+	color:#e71838;
+	transition:1s all;
+}
+
+
+
+#center_top_bar{
+	width:50%;
+	height:100%;
+	float:left;
+	font-size:35px;
+	font-family:"Times New Roman", Times, serif;
+	color:#FFF;
+	text-align:center;
+	}
+
+#right_top_bar{
+	width:25%;
+	height:100%;
+	float:left;
+	background:#555555;
+	text-align:right;
+	}
+
+
+#search_form_field{
+	background:#555555;
+	width:200px;
+	height:42px;
+	outline:0;
+	border:#555555;
+	text-align:center;
+	color:#FFF;
+	}
+
+
+#search_form_field_btn{
+	color:#FFF;
+	outline:0;
+	border:#e71838;
+	background:#555555;
+}
+
+
+
+
+#news_bar{
+	width:960px;
+	height:30px;
+	margin:0 auto;
+	background:#eeeeee;
+	}
+
+
+#left_news_bar{
+	width:20%;
+	height:100%;
+	float:left;
+	font-size:24px;
+	font-family:"Times New Roman", Times, serif;
+	color:#e71838;
+	text-indent:10px;
+	}
+
+
+
+#right_news_bar{
+	width:80%;
+	height:100%;
+	float:left;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	color:#e71838;
+	text-indent:10px;
+	}
+
+
+
+#logo{
+	width:960px;
+	height:200px;
+	margin:0 auto;
+	background:#FFF;
+	}
+
+
+#left_logo{
+	width:25%;
+	height:100%;
+	float:left;
+	}
+
+
+#right_logo{
+	width:75%;
+	height:100%;
+	float:left;
+	}
+
+
+#menu{
+	width:960px;
+	height:60px;
+	margin:0 auto;
+	background:#FFF;
+	text-align:center;
+	}
+
+
+#menu ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	text-align:center;
+	}
+
+
+#menu ul li{
+	text-align:center;
+	display:inline-block;
+	width:150px;
+	height:50px;
+	transition:1s all;
+	margin-left:5px;
+	margin-right:5px;
+	}
+
+
+#menu ul li:hover{
+	transition:1s all;
+	background:#e71838 !important;
+}
+
+
+#menu ul li:hover a{
+	transition:1s all;
+	color:#FFF !important;
+}
+
+
+
+#menu ul li a {
+	transition:1s all;
+	display:inline-block;
+	text-decoration:none;
+	width:100%;
+	height:100%;
+	color:#000;
+	font-size:22px;
+	font-family:"Times New Roman", Times, serif;
+	line-height:2;
+	}
+
+
+
+
+#slider{
+	width:960px;
+	height:350px;
+	margin:0 auto;
+	margin-bottom:20px;
+	}
+
+
+
+#dynamic_menu{
+	width:960px;
+	height:50px;
+	margin:0 auto;
+	margin-bottom:20px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
+background: #b7deed; /* Old browsers */
+background: -moz-linear-gradient(top,  #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b7deed), color-stop(50%,#71ceef), color-stop(51%,#21b4e2), color-stop(100%,#b7deed)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); /* IE6-9 */
+
+
+	}
+
+
+
+#dynamic_menu ul{
+	padding:0px;
+	margin:0px;
+	text-align:center;
+	list-style:none;
+}
+
+
+#dynamic_menu ul li{
+	width:150px;
+	height:50px;
+	text-align:center;
+	display:inline-block;
+	transition:1s all;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+
+#dynamic_menu ul li:hover{
+	background:#eeeeee;
+	transition:1s all;
+}
+
+
+#dynamic_menu ul li a{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	text-decoration:none;
+	color:#FFF;
+	transition:1s all;
+	font-size:22px;
+	font-family:"Times New Roman", Times, serif;
+	line-height:2;
+}
+
+
+
+#dynamic_menu ul li:hover a{
+	transition:1s all;
+	transform:rotatey(90deg);
+	transform-style:preserve-3d;
+	transform-origin:0 0;
+	
+	-webkit-transform:rotatey(90deg);
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform-origin:0 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aebcbf+0,6e7774+50,0a0e0a+51,0a0809+100;Black+Gloss */
+background: #aebcbf; /* Old browsers */
+background: -moz-linear-gradient(top,  #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aebcbf), color-stop(50%,#6e7774), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+
+
+
+
+
+#dynamic_menu ul li a:after{
+	content:attr(data-title);
+	transition:1s all;
+
+	
+	transform:rotatey(-90deg);
+	transform-style:preserve-3d;
+	transform-origin:0 0;
+	
+	-webkit-transform:rotatey(-90deg);
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform-origin:0 0;
+	
+	position:absolute;
+	width:100%;
+	height:100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aebcbf+0,6e7774+50,0a0e0a+51,0a0809+100;Black+Gloss */
+background: #aebcbf; /* Old browsers */
+background: -moz-linear-gradient(top,  #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aebcbf), color-stop(50%,#6e7774), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
+
+	
+	}
+
+
+
+
+#section{
+	width:960px;
+	height:1000px;
+	margin:0 auto;
+	background:#FFF;
+	}
+
+
+#message_bar{
+	width:100%;
+	height:3%;
+	background:#e71838;
+	text-align:center;
+	color:#FFF;
+	font-size:24px;
+	font-family:"Times New Roman", Times, serif;
+	}
+
+#data_bar{
+	width:100%;
+	height:97%;
+	}
+
+
+#left_data_bar{
+	width:25%;
+	height:100%;
+	float:left;
+	background:#eeeeee;
+	text-align:center;
+	color:#e71838;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	}
+
+
+#left_data_bar ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	text-align:left;
+}
+
+#left_data_bar ul li{
+	list-style:none;
+	display:block;
+	width:240px;
+	height:50px;
+	text-indent:10px;
+	transition:1s all;
+}
+
+#left_data_bar ul li:hover{
+	background:#e71838;
+	transition:1s all;
+}
+
+
+#left_data_bar ul li a{
+	line-height:2;
+	display:block;
+	width:100%;
+	height:100%;
+	text-align:left;
+	font-size:24px;
+	font-family:"Times New Roman", Times, serif;
+	color:#e71838;
+	text-decoration:none;
+}
+
+
+#left_data_bar ul li:hover a{
+	color:#FFF;
+	transition:1s all;
+}
+
+
+
+
+#right_data_bar{
+	width:75%;
+	height:100%;
+	float:left;
+	}
+
+
+h1{
+	padding:0px;
+	margin:0px;
+	color:#FFF;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+background: rgb(76,76,76); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(12%,rgba(89,89,89,1)), color-stop(25%,rgba(102,102,102,1)), color-stop(39%,rgba(71,71,71,1)), color-stop(50%,rgba(44,44,44,1)), color-stop(51%,rgba(0,0,0,1)), color-stop(60%,rgba(17,17,17,1)), color-stop(76%,rgba(43,43,43,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+	}
+
+
+
+#footer{
+	width:960px;
+	height:420px;
+	margin:0 auto;
+	background:#eeeeee;
+	}
+
+
+#left_footer{
+	width:25%;
+	height:100%;
+	float:left;
+	}
+
+
+#center_footer{
+	width:50%;
+	height:100%;
+	float:left;
+	}
+
+
+#right_footer{
+	width:25%;
+	height:100%;
+	float:left;
+	}
+
+
+#top_right_footer{
+	width:100%;
+	height:50%;
+	text-align:center;
+	}
+
+
+#top_right_footer img{
+	border:3px solid #333;
+}
+
+
+
+
+#bottom_right_footer{
+	width:100%;
+	height:50%;
+	text-align:center;
+	}
+	
+
+
+
+#left_footer ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	text-align:left;
+}
+
+#left_footer ul li{
+	list-style:none;
+	display:block;
+	width:240px;
+	height:50px;
+	text-indent:10px;
+	transition:1s all;
+}
+
+#left_footer ul li:hover{
+	background:#e71838;
+	transition:1s all;
+}
+
+
+#left_footer ul li a{
+	line-height:2;
+	display:block;
+	width:100%;
+	height:100%;
+	text-align:left;
+	font-size:24px;
+	font-family:"Times New Roman", Times, serif;
+	color:#e71838;
+	text-decoration:none;
+}
+
+
+#left_footer ul li:hover a{
+	color:#FFF;
+	transition:1s all;
+}
+
+
+
+
+#contact_name_field{
+	font-size:18px;
+	outline:0;
+	border:#FFF;
+	font-family:"Times New Roman", Times, serif;
+	width:200px;
+	height:50px;
+	text-align:center;
+	background:#FFF;
+	color:#F00;
+	transition:1s all;
+	margin-top:5px;
+	margin-bottom:5px;
+	}
+
+
+#contact_name_field:hover{
+	border-radius:50px;
+	transition:1s all;
+}
+
+
+
+
+
+
+
+#contact_email_field{
+	font-size:18px;
+	outline:0;
+	border:#cc0000;
+	font-family:"Times New Roman", Times, serif;
+	width:200px;
+	height:50px;
+	text-align:center;
+	background:#FFF;
+	color:#F00;
+	transition:1s all;
+	margin-top:5px;
+	margin-bottom:5px;
+	}
+
+
+#contact_email_field:hover{
+	transition:1s all;
+	border-radius:50px;
+}
+
+
+
+
+
+
+#contact_cellno_field{
+	font-size:18px;
+	outline:0;
+	border:#cc0000;
+	font-family:"Times New Roman", Times, serif;
+	width:200px;
+	height:50px;
+	text-align:center;
+	background:#FFF;
+	color:#F00;
+	transition:1s all;
+	margin-top:5px;
+	margin-bottom:5px;
+	}
+
+
+#contact_cellno_field:hover{
+	transition:1s all;
+	border-radius:50px;
+}
+
+
+
+
+
+#contact_query_field{
+	font-size:18px;
+	outline:0;
+	border:#cc0000;
+	font-family:"Times New Roman", Times, serif;
+	width:200px;
+	height:100px;
+	text-align:center;
+	background:#FFF;
+	color:#F00;
+	transition:1s all;
+	margin-top:5px;
+	margin-bottom:5px;
+	}
+
+
+#contact_query_field:hover{
+	transition:1s all;
+	border-radius:50px;
+}
+
+
+
+#btn{
+	background:#e71838;
+	border:#e71838;
+	outline:0;
+	color:#FFF;
+	font-size:20px;
+	font-family:"Times New Roman", Times, serif;
+	transition:1s all;
+	}
+
+#btn:hover{
+	transition:1s all;
+	background:#000;
+	color:#FFF;
+}
+
+
+
+
+#copyright_bar{
+	width:960px;
+	height:30px;
+	background:#e71838;
+	margin:0 auto;
+	text-align:center;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	color:#FFF;
+	}
+
+
+
+#insert_product_form_title{
+	width:250px;
+	height:50px;
+	text-align:center;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	background:#e71838;
+	outline:0;
+	border:#e71838;
+	color:#FFF;
+	transition:1s all;
+	}
+
+
+#insert_product_form_title:hover{
+	box-shadow:0px 0px 10px 5px #333333;
+	transition:1s all;
+}
+
+
+
+
+
+
+#insert_product_form_brand{
+	width:250px;
+	height:50px;
+	text-align:center;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	background:#e71838;
+	outline:0;
+	border:#e71838;
+	color:#FFF;
+	transition:1s all;
+	}
+
+
+#insert_product_form_brand:hover{
+	box-shadow:0px 0px 10px 5px #333333;
+	transition:1s all;
+}
+
+
+
+
+
+#insert_product_form_category{
+	width:250px;
+	height:50px;
+	text-align:center;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	background:#e71838;
+	outline:0;
+	border:#e71838;
+	color:#FFF;
+	transition:1s all;
+	}
+
+
+#insert_product_form_category:hover{
+	box-shadow:0px 0px 10px 5px #333333;
+	transition:1s all;
+}
+
+
+
+
+
+
+
+#insert_product_form_price{
+	width:250px;
+	height:50px;
+	text-align:center;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	background:#e71838;
+	outline:0;
+	border:#e71838;
+	color:#FFF;
+	transition:1s all;
+	}
+
+
+#insert_product_form_price:hover{
+	box-shadow:0px 0px 10px 5px #333333;
+	transition:1s all;
+}
+
+
+
+
+
+
+#insert_product_form_desc{
+	width:250px;
+	height:150px;
+	text-align:center;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	background:#e71838;
+	outline:0;
+	border:#e71838;
+	color:#FFF;
+	transition:1s all;
+	}
+
+
+#insert_product_form_desc:hover{
+	box-shadow:0px 0px 10px 5px #333333;
+	transition:1s all;
+}
+
+
+
+
+
+
+
+
+
+
+#insert_product_form_keyword{
+	width:250px;
+	height:50px;
+	text-align:center;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	background:#e71838;
+	outline:0;
+	border:#e71838;
+	color:#FFF;
+	transition:1s all;
+	}
+
+
+#insert_product_form_keyword:hover{
+	box-shadow:0px 0px 10px 5px #333333;
+	transition:1s all;
+}
+
+
+
+#single_product{
+	margin-top:10px;
+	margin-bottom:30px;
+	width:300px;
+	height:250px;
+	float:left;
+	margin-left:35px;
+	text-align:center;
+	position:relative;
+	overflow:hidden;
+	transition:1s all;
+	}
+
+
+#single_product img{
+	box-shadow:0px 0px 10px 5px #666666;
+	outline:0;
+	
+}
+
+	
+
+#caption_single_product{
+	width:100%;
+	margin-bottom:35px;
+	position:absolute;
+	height:85%;
+	bottom:-100%;
+	transition:1s all;
+	text-align:center;
+	border-bottom:1px solid #e71838;
+	}
+
+#caption_single_product img{
+	border-top-left-radius:50px;
+	border-bottom-right-radius:50px;
+	border:0;
+	
+}
+
+
+#single_product:hover #caption_single_product{
+	bottom:0%;
+	transition:1s all;
+	}
+
+
+
+

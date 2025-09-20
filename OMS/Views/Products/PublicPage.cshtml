@@ -1,0 +1,92 @@
+﻿@model IEnumerable<OMS.Models.Products>
+
+@{
+    ViewBag.Title = "PublicPage";
+    Layout = "~/Views/Shared/_myLayout.cshtml";
+}
+<link href="~/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
+<link href="~/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/CSS Hover Effects/css/hover.css" rel="stylesheet" />
+<link href="~/engine1/style.css" rel="stylesheet" />
+<link href="~/font-awesome-4.4.0/style.css" rel="stylesheet" />
+<script src="~/engine1/jquery.js"></script>
+<h3 class="w3ls-title">Recently Searched Medicines</h3>
+
+
+
+
+<table class="table table-striped datatable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MadicalStore.StoreName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProducName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Producformula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Productweight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.MadicalStore.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productImage)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MadicalStore.StoreName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProducName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producformula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Productweight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.MadicalStore.City)
+            </td>
+            <td>
+                <img src="~/Content/ProductImg/@item.productImage" width="100" height="100" />
+            </td>
+            <td>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<script src="~/Content/js/libs/jquery.dataTables.min.js"></script>
+<script src="~/Content/js/libs/dataTables.bootstrap4.min.js"></script>
+
+<script src="~/Content/js/views/tables.js"></script>

@@ -1,0 +1,51 @@
+﻿
+@model IEnumerable<OMS.Models.ApplicationUser>
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_mainLayout.cshtml";
+}
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="card card-outline-success">
+                <div class="card-header">
+                    <h2>Users|<small>List</small></h2>
+                </div>
+                <div class="card-block">
+                    <p>
+                        @Html.ActionLink("Create New", "Create", "Products")
+                    </p>
+                    <table class="table table-striped datatable">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Users
+                                </th>
+                         
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UserName)
+                                    </td>
+                          
+
+
+                                    <td>
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+
+                                    
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>

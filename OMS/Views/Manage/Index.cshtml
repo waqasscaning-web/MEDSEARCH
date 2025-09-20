@@ -1,0 +1,43 @@
+﻿@model OMS.Models.IndexViewModel
+   @using Microsoft.AspNet.Identity
+@{
+    Layout = "~/Views/Shared/_newlayout.cshtml";
+    string username = User.Identity.GetUserName();
+
+}
+
+<h1>@User.Identity.GetUserName()</h1>
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Change your account settings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Password:</dt>
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Change your password", "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Create", "SetPassword")
+            }
+            ]
+        </dd>
+
+        <dt>Personal Info:</dt>
+        <dd>
+            [
+            @*@Html.ActionLink("Personal Info", "Edit", new { id = User.Identity.GetUserId() });*@
+
+            @Url.Action("Edit","Manage", new { id = User.Identity.GetUserId()});
+
+            ]
+        </dd>
+
+
+
+    </dl>
+    @Html.ActionLink("Back to Dashbord", "Index", "Products")
+</div>

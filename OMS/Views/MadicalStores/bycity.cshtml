@@ -1,0 +1,37 @@
+﻿@model IEnumerable<OMS.Models.MadicalStore>
+
+@{
+    ViewBag.Title = "bycity";
+    Layout = "~/Views/Shared/_myLayout.cshtml";
+}
+
+<div class="agileits-modal modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</h4>
+            </div>
+            <div class="modal-body modal-body-sub">
+                <h5>Select Your Nearest Medical Store Location </h5>
+                @using (Html.BeginForm("bycity", "MadicalStores"))
+                {
+                    <select class="form-control bfh-states" name="area" id="area" data-country="US" data-state="CA">
+                       @foreach(var item in Model)
+                       {
+                           <option value="@item.City">@item.City</option>
+                       }
+
+                    </select>
+                    <input type="submit" value="search" />
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        $('#myModal88').modal('show');
+</script>
+

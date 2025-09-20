@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link href="~/Content/mycssandjs/css/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/mycssandjs/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/mycssandjs/css/flexslider.css" rel="stylesheet" />
+    <link href="~/Content/mycssandjs/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/mycssandjs/css/ken-burns.css" rel="stylesheet" />
+    <link href="~/Content/mycssandjs/css/menu.css" rel="stylesheet" />
+    <link href="~/Content/mycssandjs/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/mycssandjs/css/style.css" rel="stylesheet" />
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="~/Content/mycssandjs/js/bootstrap.js"></script>
+    <script src="~/Content/mycssandjs/js/custom.js"></script>
+    <script src="~/Content/mycssandjs/js/easing.js"></script>
+    <script src="~/Content/mycssandjs/js/imagezoom.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery-2.2.3.min.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery.classycountdown.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery-scrolltofixed-min.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery.flexslider.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery.jscrollpane.min.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery.knob.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery.marquee.min.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery.menu-aim.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery.mousewheel.js"></script>
+    <script src="~/Content/mycssandjs/js/jquery.throttle.js"></script>
+    <script src="~/Content/mycssandjs/js/main.js"></script>
+    <script src="~/Content/mycssandjs/js/minicart.js"></script>
+    <script src="~/Content/mycssandjs/js/move-top.js"></script>
+    <script src="~/Content/mycssandjs/js/owl.carousel.js"></script>
+    <style>
+    </style>
+    <link href="~/Content/mycssa.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 4,
+                itemsDesktop: [640, 5],
+                itemsDesktopSmall: [480, 2],
+                navigation: true
+
+            });
+        });
+    </script>
+    <script src="~/Content/mycssandjs/js/jquery-scrolltofixed-min.js"></script>
+    <link href="~/Content/akh.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+
+            // Dock the header to the top of the window when scrolled past the banner. This is the default behaviour.
+
+            $('.header-two').scrollToFixed();
+            // previous summary up the page.
+
+            var summaries = $('.summary');
+            summaries.each(function (i) {
+                var summary = $(summaries[i]);
+                var next = summaries[i + 1];
+
+                summary.scrollToFixed({
+                    marginTop: $('.header-two').outerHeight(true) + 10,
+                    zIndex: 999
+                });
+            });
+        });
+    </script>
+    <!-- start-smooth-scrolling -->
+    <script src="~/Content/mycssandjs/js/easing.js"></script>
+
+
+    <script src="~/Content/mycssandjs/js/move-top.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <script src="~/Content/mycssandjs/js/bootstrap.js"></script>
+
+</head>
+<body>
+   
+    <div class="header">
+        <div class="w3ls-header">
+            <!--header-one-->
+            <div class="w3ls-header-left">
+                <p><a href="/MadicalStores/bycity">Online Medicine Search </a></p>
+            </div>
+            <div class="w3ls-header-right">
+                <ul>
+                    <li class="dropdown head-dpdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> My Account<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Account/Login">Login </a></li>
+                            <li><a href="/Account/Register">Sign Up</a></li>
+
+                        </ul>
+                    </li>
+
+                   
+
+                    <li class="dropdown head-dpdn">
+                        <a href="/Products/PublicPageStores" class="dropdown-toggle"><i class="fa fa-map-marker" aria-hidden="true"></i> Store Finder</a>
+                    </li>
+
+                    <li class="dropdown head-dpdn">
+                        <a href="help.html" class="dropdown-toggle"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="header-two">
+            <!-- header-two -->
+            <div class="container">
+                <div class="header-logo">
+                    <h1><a href="/MadicalStores/bycity"><span>M</span> edicine <i>Search</i></a></h1>
+                    <h6>Your stores. Your place.</h6>
+                </div>
+                <div class="header-search">
+                  
+                    <form action="@Url.Action("PublicProductList","Products")" method="post">
+                        <input type="search" name="Search" placeholder="Search " required="">
+                        <button type="submit" class="btn btn-default" aria-label="Left Align">
+                            <i class="fa fa-search" aria-hidden="true"> </i>
+                        </button>
+                    </form>
+                </div>
+                <div class="header-cart">
+                    <div class="my-account">
+                        <a href="/Home/Contact"><i class="fa fa-map-marker" aria-hidden="true"></i> CONTACT US</a>
+                    </div>
+                    
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div><!-- //header-two -->
+        <div class="header-three">
+            <!-- header-three -->
+            <div class="container">
+          
+                <div class="move-text">
+                    <div class="marquee"><a href="offers.html"> All types of Medicines...... <span>Easy to find Your| Medicines </span> <span> Your Store Your Place</span></a></div>
+                    <script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+                    <script>
+					  $('.marquee').marquee({ pauseOnHover: true });
+					  // sourceURL=pen.js
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- The sidebar -->
+        
+
+        <!-- Page content -->
+        
+          
+            @RenderBody()
+        
+
+
+        <hr />
+        <footer>
+            <div class="w3agile-ftr-top">
+                <div class="container">
+                    <div class="ftr-toprow">
+                        <div class="col-md-4 ftr-top-grids">
+                            <div class="ftr-top-left">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                            </div>
+                            <div class="ftr-top-right">
+                                <h4>SAVE TIME TO VISIT MEDICAL STORES</h4>
+                                <p>Your nearst stores here</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="col-md-4 ftr-top-grids">
+                            <div class="ftr-top-left">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <div class="ftr-top-right">
+                                <h4>HEALTH CARE</h4>
+                                <p>Find your medicine in seconds </p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="col-md-4 ftr-top-grids">
+                            <div class="ftr-top-left">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="ftr-top-right">
+                                <h4>GOOD QUALITY</h4>
+                                <p>we have great collection of medical store all over the world </p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //footer-top -->
+            <!-- subscribe -->
+            <div class="subscribe">
+                <div class="container">
+                    <div class="col-md-6 social-icons w3-agile-icons">
+                        <h4>Keep in touch</h4>
+                        <ul>
+                            <li><a href="https://www.facebook.com/mianwasifrehan" class="fa fa-facebook icon facebook"> </a></li>
+                            <li><a href="mianwasifrehan@gmail.com" class="fa fa-twitter icon twitter"> </a></li>
+                            <li><a href="#" class="fa fa-google-plus icon googleplus"> </a></li>
+                            <li><a href="#" class="fa fa-dribbble icon dribbble"> </a></li>
+                            <li><a href="#" class="fa fa-rss icon rss"> </a></li>
+                        </ul>
+                        <ul class="apps">
+                            <li><h4>Download Our app : </h4> </li>
+                            <li><a href="#" class="fa fa-apple"></a></li>
+                            <li><a href="#" class="fa fa-windows"></a></li>
+                            <li><a href="#" class="fa fa-android"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 subscribe-right">
+                        <h4>Sign up for email and get Allerts</h4>
+                        @using (Html.BeginForm("Create", "subEmails", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <input type="text" name="email" placeholder="Enter your Email..." required="">
+                            <input type="submit" value="Subscribe">
+
+
+                        }
+                            <div class="clearfix"> </div>
+                        </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <!-- //subscribe -->
+            <!-- footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-info w3-agileits-info">
+                        <div class="col-md-4 address-left agileinfo">
+                            <div class="footer-logo header-logo">
+                                <h2><a href="/MadicalStores/bycity"><span>M</span>edical <i>Search</i></a></h2>
+                                <h6>Your stores. Your place.</h6>
+                            </div>
+                            <ul>
+                                <li><i class="fa fa-map-marker"></i> One unit , Bahawalpur punjab,Pak.</li>
+                                <li><i class="fa fa-mobile">03042211006</i>  </li>
+                                <li><i class="fa fa-phone"></i> 03160600069 </li>
+                                <li><i class="fa fa-envelope-o"></i> <a href="Mailto:mianwasifrehan@gmail.com"> customer_care@omss.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8 address-right">
+                            <div class="col-md-4 footer-grids">
+                                <h3>Company</h3>
+                                <ul>
+                                    <li><a href="/Home/About">About Us</a></li>
+                                    <li><a href="marketplace.html">Marketplace</a></li>
+                                    <li><a href="values.html">Core Values</a></li>
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 footer-grids">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="/Home/Contact">Contact Us</a></li>
+                                    
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="sitemap.html">Site Map</a></li>
+                                   
+                                </ul>
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- //footer -->
+            <div class="copy-right">
+                <div class="container">
+                    <p>© 2023 Online Medicine Search. All rights reserved </p>
+                </div>
+            </div>
+            <!-- cart-js -->
+            <script src="~/Content/mycssandjs/js/minicart.js"></script>
+            
+            <script>
+                w3ls.render();
+
+                w3ls.cart.on('w3sb_checkout', function (evt) {
+                    var items, len, i;
+
+                    if (this.subtotal() > 0) {
+                        items = this.items();
+
+                        for (i = 0, len = items.length; i < len; i++) {
+                            items[i].set('shipping', 0);
+                            items[i].set('shipping2', 0);
+                        }
+                    }
+                });
+            </script>
+            <!-- //cart-js -->
+            <!-- countdown.js -->
+            <script src="~/Content/mycssandjs/js/jquery.knob.js"></script>
+            <script src="~/Content/mycssandjs/js/jquery.throttle.js"></script>
+            <script src="~/Content/mycssandjs/js/jquery.classycountdown.js"></script>>
+
+            <script>
+                $(document).ready(function () {
+                    $('#countdown1').ClassyCountdown({
+                        end: '1388268325',
+                        now: '1387999995',
+                        labels: true,
+                        style: {
+                            element: "",
+                            textResponsive: .5,
+                            days: {
+                                gauge: {
+                                    thickness: .10,
+                                    bgColor: "rgba(0,0,0,0)",
+                                    fgColor: "#1abc9c",
+                                    lineCap: 'round'
+                                },
+                                textCSS: 'font-weight:300; color:#fff;'
+                            },
+                            hours: {
+                                gauge: {
+                                    thickness: .10,
+                                    bgColor: "rgba(0,0,0,0)",
+                                    fgColor: "#05BEF6",
+                                    lineCap: 'round'
+                                },
+                                textCSS: ' font-weight:300; color:#fff;'
+                            },
+                            minutes: {
+                                gauge: {
+                                    thickness: .10,
+                                    bgColor: "rgba(0,0,0,0)",
+                                    fgColor: "#8e44ad",
+                                    lineCap: 'round'
+                                },
+                                textCSS: ' font-weight:300; color:#fff;'
+                            },
+                            seconds: {
+                                gauge: {
+                                    thickness: .10,
+                                    bgColor: "rgba(0,0,0,0)",
+                                    fgColor: "#f39c12",
+                                    lineCap: 'round'
+                                },
+                                textCSS: ' font-weight:300; color:#fff;'
+                            }
+
+                        },
+                        onEndCallback: function () {
+                            console.log("Time out!");
+                        }
+                    });
+                });
+            </script>
+            <!-- //countdown.js -->
+            <!-- menu js aim -->
+            <script src="~/Content/mycssandjs/js/jquery.menu-aim.js"></script>
+            <script src="~/Content/mycssandjs/js/main.js"></script>
+            <!-- //menu js aim -->
+            <!-- Bootstrap core JavaScript
+    ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+        </footer>
+    </div>
+
+   m
+</body>
+</html>

@@ -1,0 +1,50 @@
+cat > .gitignore <<'EOF'
+# Visual Studio user-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio cache files
+.vs/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Backup & reports
+*_i.c
+*_p.c
+*_h.h
+*.tmp
+*.bak
+*.log
+*.dmp
+
+# Others
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pdb
+*.opendb
+*.VC.db
+.vscode/
+EOF

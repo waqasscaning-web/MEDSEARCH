@@ -1,0 +1,75 @@
+﻿@model IEnumerable<OMS.Models.MadicalStore>
+
+@{
+    ViewBag.Title = "Index";
+ Layout = "~/Views/Shared/_mainLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <div class="card card-outline-success">
+            <div class="card-header">
+                <h2>Medical Store|<small>List</small></h2>
+            </div>
+            <div class="card-block">
+                <p>
+                    @Html.ActionLink("Create New", "Create", "MadicalStores")
+                </p>
+                <table class="table table-striped datatable">
+                    <thead>
+                        <tr>
+                            <th>
+                                Store Name
+                            </th>
+                            <th>
+                                Address
+                            </th>
+
+                            <th>
+                                Licence
+                            </th>
+                            <th>
+                                Phone No
+                            </th>
+                            <th>
+                                Picture
+                            </th>
+                            <th>
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StoreName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StoreAddress)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StoreLicense)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.LandLine)
+                                </td>
+                                <td>
+                                    <img src="~/Content/ProductImg/@item.StoreImage" width="100" height="100" />
+                                </td>
+
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.MadicalStoreID }) |
+
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.MadicalStoreID })
+                                </td>
+                            </tr>
+                           
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

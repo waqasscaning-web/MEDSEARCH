@@ -1,0 +1,34 @@
+﻿@model IEnumerable<OMS.Models.Products>
+
+@{
+    ViewBag.Title = "PublicPageCategories";
+    Layout = "~/Views/Shared/_myLayout.cshtml";
+}
+
+<h2>PublicPageCategories</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+       
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+          
+        <td>
+            @Html.ActionLink(item.Category, "PublicPage", "Products", new { Category = item.Category }, null)
+        </td>
+       
+    </tr>
+}
+
+</table>

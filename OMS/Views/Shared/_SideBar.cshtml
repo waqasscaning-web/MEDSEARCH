@@ -1,0 +1,126 @@
+﻿<div class="sidebar">
+    <nav class="sidebar-nav">
+     
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/MadicalStores/bycity"><i class="icon-speedometer"></i> Home Page</a>
+            </li>
+            <li class="divider"></li>
+            @if (User.IsInRole("Admin"))
+            {
+                <li class="nav-title">
+                    Store Management
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>Users</a>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/UsersAdmin/Create"><i class="icon-puzzle"></i>Add</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/UsersAdmin/Index"><i class="icon-puzzle"></i>View</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-title">
+                    Subcribe Emails
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>Email</a>
+                    <ul class="nav-dropdown-items">
+                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="/subEmails/index"><i class="icon-puzzle"></i>View</a>
+                        </li>
+                    </ul>
+                </li>
+
+                @*<li class="nav-title">
+                Products Management
+            </li>
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>Products</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Products/Create"><i class="icon-puzzle"></i>Add</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Products/index"><i class="icon-puzzle"></i>View</a>
+                    </li>
+                </ul>
+            </li>*@
+
+
+                @*<li class="nav-title">
+                User Section
+            </li>
+            <li class="nav-item nav-dropdown">
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/UsersAdmin/Create"><i class="icon-puzzle"></i>Create User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/UsersAdmin/Index"><i class="icon-puzzle"></i>View User</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Users</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Papers/Create"><i class="icon-puzzle"></i> Create User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Papers/Index"><i class="icon-puzzle"></i> View User</a>
+                    </li>
+                </ul>
+            </li>*@
+            }
+            @if (User.IsInRole("confirm"))
+            {
+
+
+
+                <li class="nav-title">
+                    Store Management
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>Stores</a>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/MadicalStores/Create"><i class="icon-puzzle"></i>Add</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/MadicalStores/Index"><i class="icon-puzzle"></i>View</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-title">
+                    Products Management
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>Products</a>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Products/Create"><i class="icon-puzzle"></i>Add</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Products/index"><i class="icon-puzzle"></i>View</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+
+
+
+            }
+        </ul>
+    </nav>
+</div>
+

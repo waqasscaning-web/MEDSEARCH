@@ -1,0 +1,72 @@
+﻿@model IEnumerable<OMS.Models.MadicalStore>
+
+@{
+    ViewBag.Title = "PublicPageStores";
+    Layout = "~/Views/Shared/_newlayout.cshtml";
+}
+
+<link href="~/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
+<link href="~/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/CSS Hover Effects/css/hover.css" rel="stylesheet" />
+<link href="~/engine1/style.css" rel="stylesheet" />
+<link href="~/font-awesome-4.4.0/style.css" rel="stylesheet" />
+<script src="~/engine1/jquery.js"></script>
+<h3 class="w3ls-title">Search Your Store</h3>
+
+
+
+
+<table class="table table-striped datatable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StoreName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoreAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoreLicense)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoreImage)
+            </th>
+         
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a href="@Url.Action("PublicPage","Products",new { id=item.StoreLicense})"> @Html.DisplayFor(modelItem => item.StoreName)</a>
+
+                   
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StoreAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StoreLicense)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+              
+                <td>
+                    <img src="~/Content/ProductImg/@item.StoreImage" width="100" height="100" />
+                </td>
+                <td>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script src="~/Content/js/libs/jquery.dataTables.min.js"></script>
+<script src="~/Content/js/libs/dataTables.bootstrap4.min.js"></script>
+
+<script src="~/Content/js/views/tables.js"></script>
